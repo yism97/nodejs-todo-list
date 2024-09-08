@@ -6,7 +6,7 @@ import Todo from "../schemas/todo.schema.js";
 const router = express.Router();
 /* 할일 등록 API */
 // 해당하는 데이터 조회를 위해 async, await 사용
-router.post("/todos", async (req, res, next) => {
+router.post("/todos", async (req, res) => {
   // 1. 클라이언트로 부터 받아온 value 데이터를 가져온다.
   const { value } = req.body;
 
